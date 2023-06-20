@@ -1,0 +1,27 @@
+<form (submit)="addTache()">
+  tache à faire: <input type="text" name="t" [(ngModel)]="tache.titre">
+  date: <input type="datetime-local" name="t" [(ngModel)]="tache.date">
+  lieu: <input type="text" name="t" [(ngModel)]="tache.lieu">
+
+  <button  type="submit">ajouter</button>
+</form>
+<ol>
+  <li *ngFor="let tc of listTache">
+    {{tc.titre}}
+
+  </li>
+
+</ol>
+<table width="50%" align="center" border="1">
+<tr>
+  <td>Titre</td>
+  <td>date</td>
+  <td>Lieu</td>
+</tr>
+<tr *ngFor="let tach of listTache">
+  <td>{{tach.titre}}</td>
+  <td>{{tach.date}}</td>
+  <td>{{tach.lieu}}</td>
+</tr>
+
+</table>
