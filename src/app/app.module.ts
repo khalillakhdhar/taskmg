@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { FormsModule } from '@angular/forms';
+import { EquipeComponent } from './equipe/equipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TasksComponent
+    TasksComponent,
+    EquipeComponent
   ],
   imports: [
     BrowserModule,
